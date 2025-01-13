@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   checking.c                                         :+:      :+:    :+:   */
+/*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maduneau <maduneau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marieduneau <marieduneau@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:04:39 by maduneau          #+#    #+#             */
-/*   Updated: 2024/12/05 18:23:33 by maduneau         ###   ########.fr       */
+/*   Updated: 2025/01/13 16:51:25 by marieduneau      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int check_map_is_ber(char *file_path)
     len = ft_strlen(file_path);
     if (len < 4 || ft_strncmp(file_path + len - 4, ".ber", 4) != 0)
     {
-        write(2, "Error\n File name is not .ber\n", 30);
+        printf("Error\n File name is not .ber\n");
         exit(EXIT_FAILURE);
     }
     return (0);
